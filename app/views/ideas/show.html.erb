@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>이름:</strong>
+  <%= @idea.name %>
+</p>
+
+<p>
+  <strong>내용:</strong>
+  <%= @idea.description %>
+</p>
+
+<p>
+  <strong>사진:</strong>
+  <%= image_tag(@idea.picture_url, :width => 600) %>
+</p>
+
+<%= link_to '수정', edit_idea_path(@idea) %> |
+<%= link_to '뒤로가기', ideas_path %>
